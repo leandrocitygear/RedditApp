@@ -18,6 +18,19 @@
 <li>Never tracks You</li>
 </ul>
 
+<h2>Technologies Used</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Framework: React</li>
+  <li>Routing: React Router v7</li>
+  <li>State Management: Redux</li>
+  <li>Package Manager: NPM</li>
+  <li>Unit Testing: Jest And Enzyme</li>
+  <li>Testing: Selenium</li>
+</ul>
+
 <h2>Credit</h2>
 <p>Leandro De la cruz</p>
 <a href="www.linkedin.com/in/leandro-de-la-cruz-730339281">Linkedin</a>
