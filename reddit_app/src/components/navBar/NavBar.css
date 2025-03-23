@@ -36,16 +36,26 @@ height: 50%;
 } 
 
 li {
-    /* border: solid red; */
+    border: solid transparent 1px;
     /* margin: 5px; */
     padding-left: 50px;
     padding-right: 50px;
     background-color: rgb(236, 235, 235);
 border-radius: 20px;
-border-width: 0px;
+/* border-width: 0px; */
 cursor: pointer;
+
 }
 
 li:hover {
     border: solid #FF4500 1px;
+}
+
+
+.navButtoms {
+    color: black;
+}
+
+.navButtoms:hover {
+ color: black;
 }

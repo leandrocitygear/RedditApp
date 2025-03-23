@@ -12,7 +12,7 @@
 
 input {
     border-radius: 20px;
-    border: none;
+    border: solid 1px transparent;
     /* outline: 0px; */
     text-overflow: ellipsis;
     width: 100%;
