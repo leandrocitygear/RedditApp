@@ -1,5 +1,6 @@
 
 import NavBar from "./components/navBar/NavBar";
+import Content from "./components/content/Content";
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     
     <body>
       <NavBar />
+      <Content />
       
 
 

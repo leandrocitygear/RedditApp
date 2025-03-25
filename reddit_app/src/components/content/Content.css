@@ -1,0 +1,11 @@
+.contentContainer {
+    border: solid gray 1px;
+    border-top: none ;
+    height: 100%;
+    width: 50%;
+    /* padding: 2%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
