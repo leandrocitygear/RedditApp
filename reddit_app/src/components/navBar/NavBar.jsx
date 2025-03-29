@@ -1,15 +1,10 @@
 import './NavBar.css';
 import Search from '../searchBox/Search';
-
+import { NavLink } from 'react-router';
 
 
 function NavBar() {
 
-    const borderClicked = (newColor) => {
-       const elem = document.getElementsByClassName("navButtoms"); 
-        elem.style.border = newColor;
-
-    }
 
 
     return (
@@ -18,10 +13,21 @@ function NavBar() {
                 <h1 className='logo'>Reddit<span>light</span></h1>
                 
                 <ul className='navigation-links'>
-                    <li onClick={borderClicked} ><a className='navButtoms' href='#'>Home</a></li>
-                    <li><a className='navButtoms' href='#'>Popular</a></li>
-                    <li><a className='navButtoms' href='#'>Explore</a></li>
-                    <li><a className='navButtoms' href='#'>All</a></li>
+                   <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "notActive")} >  
+                        <li> <img className='navicons' src='./src/assets/home.png'/> Home</li> 
+                   </NavLink>
+
+                   <NavLink to="/popular" className={({ isActive }) => (isActive ? "active" : "notActive")} > 
+                        <li> <img className='navicons' src='./src/assets/popular.png'/> Popular</li>
+                   </NavLink>
+
+                   <NavLink to="/explore" className={({ isActive }) => (isActive ? "active" : "notActive")} > 
+                        <li> <img className='navicons' src='./src/assets/explore.png'/> Explore</li>
+                   </NavLink>
+                   
+                   <NavLink to="/all" className={({ isActive }) => (isActive ? "active" : "notActive")} >   
+                        <li> <img className='navicons' src='./src/assets/all.png'/> All</li> 
+                   </NavLink>
                 </ul>
                 <Search />
             </nav>

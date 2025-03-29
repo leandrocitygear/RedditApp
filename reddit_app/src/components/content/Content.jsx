@@ -1,5 +1,9 @@
+import AllPage from '../allPage/AllPage';
+import ExplorePage from '../explorePage/ExplorePage';
+import HomePage from '../homePage/HomePage';
+import PopularPage from '../popularPage/PopularPage';
 import './Content.css';
-import Post from '../post/Post';
+
 
 
 function Content() {
@@ -10,8 +14,10 @@ function Content() {
 
         <div className='contentContainer'>
         
-            <Post />
-            
+            <HomePage />
+            <PopularPage />
+            <ExplorePage />
+            <AllPage />            
         
         </div>
     )
