@@ -10,7 +10,9 @@ function NavBar() {
     return (
         
             <nav>
-                <h1 className='logo'>Reddit<span>light</span></h1>
+                <NavLink to="/" className={({ isActive }) => (isActive ? "activeLogo" : "notActiveLogo")} >
+                    <h1 className='logo'>Reddit<span>light</span></h1>
+                </NavLink>
                 
                 <ul className='navigation-links'>
                    <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "notActive")} >  

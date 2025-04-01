@@ -18,9 +18,9 @@ function App() {
 
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="popular" element={<PopularPage />} />
-      <Route path="explore" element={<ExplorePage />} />
-      <Route path="all" element={<AllPage />} />
+      <Route path="/popular" element={<PopularPage />} />
+      <Route path="/explore" element={<ExplorePage />} />
+      <Route path="/all" element={<AllPage />} />
     </Routes>
     </body>
     
