@@ -26,10 +26,6 @@ function NavBar() {
                    <NavLink to="/explore" className={({ isActive }) => (isActive ? "active" : "notActive")} > 
                         <li> <img className='navicons' src='./src/assets/explore.png'/> Explore</li>
                    </NavLink>
-                   
-                   <NavLink to="/all" className={({ isActive }) => (isActive ? "active" : "notActive")} >   
-                        <li> <img className='navicons' src='./src/assets/all.png'/> All</li> 
-                   </NavLink>
                 </ul>
                 <Search />
             </nav>

@@ -1,4 +1,6 @@
 
+import './PopularPage.css'
+
 function PopularPage() {
 
 
@@ -10,8 +12,20 @@ function PopularPage() {
 
         <>
 
-        <div>
-            <h1> Popular page</h1>
+        <div className='PopularpostContainer'>
+            <div id='PopularuserInfo'>
+                <img id='PopularuserImage' src='./src/assets/original.jpg' />
+                <span id='PopularuserName'>Leandrocitygear</span>
+            </div>
+            <div id='PopularuserPost'>
+            <p id='PopularpostHeading'>This is heading</p>
+            <img className="PopularpostContent" src='./src/assets/331295.jpg' />
+            <div className='PopularcommentsButtom'>
+                <img className="Popularicons" src="./src/assets/comment.png" alt="" />
+                <span id="PopularcommentAmount">212</span>
+            </div>
+            </div>
+        
         </div>
         </>
     )

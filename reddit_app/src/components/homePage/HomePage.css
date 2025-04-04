@@ -1,0 +1,97 @@
+
+
+.HomepostContainer {
+    border: solid gray 1px;
+    border-left: none;
+    border-right: none;
+    height: 78%;
+    width: 80%;
+    /* border-radius: 2%; */
+    cursor: pointer;
+    background-color: white;
+/* background-color: rgb(247, 247, 247); */
+
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomepostContainer:hover {
+background-color: rgb(247, 247, 247);
+ 
+
+}
+
+#HomeuserInfo {
+    /* border: solid 1px blue; */
+    /* display: flex; */
+    width: 95%;
+    height: 5%;
+    /* align-items: center; */
+    margin-top: 1%;
+}
+
+#HomeuserImage {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+#HomeuserName {
+padding-left: 2%;
+}
+
+#HomeuserPost {
+    /* border: solid 1px green; */
+    height: 92%;
+    width: 95%;
+    margin-top: 1%;
+
+    
+}
+
+#HomepostHeading {
+    /* border: solid 1px; */
+    margin: 0;
+    font-size: 20px;
+    padding-left: 0.5%;
+}
+
+.HomepostContent {
+    height: 89%;
+    width: 100%;
+    border-radius: 20px ;
+    margin: 0;
+    /* border: solid; */
+    
+}
+
+.HomecommentsButtom {
+    border: solid transparent 1px;
+    height: 4%;
+    width: 10%;
+    border-radius: 16px;
+    background-color: rgb(236, 235, 235); 
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.HomecommentsButtom:hover {
+    border: solid #FF4500 1px;
+
+}
+
+.Homeicons {
+    height: 80%;
+}
+
+#commentAmount {
+
+}

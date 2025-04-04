@@ -1,6 +1,6 @@
 
 
-.postContainer {
+.PopularpostContainer {
     border: solid gray 1px;
     border-left: none;
     border-right: none;
@@ -17,32 +17,32 @@
     align-items: center;
 }
 
-.postContainer:hover {
+.PopularpostContainer:hover {
 background-color: rgb(247, 247, 247);
  
 
 }
 
-#userInfo {
+#PopularuserInfo {
     /* border: solid 1px blue; */
-    display: flex;
+    /* display: flex; */
     width: 95%;
     height: 5%;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 1%;
 }
 
-#userImage {
+#PopularuserImage {
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
 
-#userName {
+#PopularuserName {
 padding-left: 2%;
 }
 
-#userPost {
+#PopularuserPost {
     /* border: solid 1px green; */
     height: 92%;
     width: 95%;
@@ -51,14 +51,14 @@ padding-left: 2%;
     
 }
 
-#postHeading {
+#PopularpostHeading {
     /* border: solid 1px; */
     margin: 0;
     font-size: 20px;
     padding-left: 0.5%;
 }
 
-.postContent {
+.PopularpostContent {
     height: 89%;
     width: 100%;
     border-radius: 20px ;
@@ -67,7 +67,7 @@ padding-left: 2%;
     
 }
 
-.commentsButtom {
+.PopularcommentsButtom {
     border: solid transparent 1px;
     height: 4%;
     width: 10%;
@@ -83,12 +83,12 @@ padding-left: 2%;
     
 }
 
-.commentsButtom:hover {
+.PopularcommentsButtom:hover {
     border: solid #FF4500 1px;
 
 }
 
-.icons {
+.Popularicons {
     height: 80%;
 }
 
