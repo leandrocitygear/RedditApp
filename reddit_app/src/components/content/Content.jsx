@@ -1,5 +1,5 @@
-import AllPage from '../allPage/AllPage';
-import ExplorePage from '../explorePage/ExplorePage';
+
+import CommentsPage from '../comments/Comments';
 import HomePage from '../homePage/HomePage';
 import PopularPage from '../popularPage/PopularPage';
 import './Content.css';
@@ -17,8 +17,7 @@ function Content() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/popular" element={<PopularPage />} />
-                <Route path="/explore" element={<ExplorePage />} />
-                <Route path="/all" element={<AllPage />} />
+                <Route path='/comments' element={<CommentsPage />} />
             </Routes>
                 
         </div>

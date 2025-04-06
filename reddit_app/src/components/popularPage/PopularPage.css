@@ -1,17 +1,30 @@
-
-
-.PopularpostContainer {
+.Popularlink {
+    /* border: solid red; */
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
     border: solid gray 1px;
     border-left: none;
     border-right: none;
     height: 78%;
     width: 80%;
-    /* border-radius: 2%; */
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.PopularpostContainer {
+    /* border: solid gray 1px; */
+    /* border-left: none; */
+    /* border-right: none; */
+    height: 99%;
+    width: 100%;
+    border-radius: 2%;
     cursor: pointer;
     background-color: white;
 /* background-color: rgb(247, 247, 247); */
 
-    margin-top: 5%;
+    /* margin: 1%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +32,7 @@
 
 .PopularpostContainer:hover {
 background-color: rgb(247, 247, 247);
+color: black;
  
 
 }
