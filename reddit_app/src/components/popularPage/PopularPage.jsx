@@ -11,15 +11,16 @@ function PopularPage() {
 
 
         <>
-<Link className='Popularlink' to={'/comments'}>
-        <div className='PopularpostContainer'>
-            <div id='PopularuserInfo'>
+<div className='Popularlink'>
+        <Link className='PopularpostContainer' to={'/comments'}>
+            <Link className='PopularuserInfo' to={'/subreddit'}>
                 <img id='PopularuserImage' src='./src/assets/original.jpg' />
                 <span id='PopularuserName'>Leandrocitygear</span>
-            </div>
+            </Link>
+
             <div id='PopularuserPost'>
             <p id='PopularpostHeading'>This is heading</p>
-            <img className="PopularpostContent" src='./src/assets/331295.jpg' />
+            <img onClick={(e) => e.preventDefault()} className="PopularpostContent" src='./src/assets/331295.jpg' />
            
            
             <div className='PopularcommentsButtom'>
@@ -28,9 +29,10 @@ function PopularPage() {
             </div>
            
             </div>
-        
-        </div>
+
+
         </Link>
+        </div>
         </>
     )
 };

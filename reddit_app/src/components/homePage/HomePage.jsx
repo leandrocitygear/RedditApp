@@ -23,12 +23,13 @@ useEffect(() => {
 
 
         <>
-<Link className='Homelink' to={'/comments'}> 
-<div className='HomepostContainer'>
-            <div id='HomeuserInfo' onClick={(e) => e.preventDefault()}>
+<div className='Homelink' > 
+<Link className='HomepostContainer' to={'/comments'}>
+           <Link className='HomeuserInfo' to={'/subreddit'}>
                 <img id='HomeuserImage' src='./src/assets/original.jpg' />
                 <span id='HomeuserName'>Leandrocitygear</span>
-            </div>
+            </Link>
+
             <div id='HomeuserPost'>
             <p id='HomepostHeading'>This is heading</p>
             
@@ -40,8 +41,8 @@ useEffect(() => {
             </div>
 
             </div>
-        </div>
-        </Link> 
+        </Link>
+        </div> 
         </>
     )
 };

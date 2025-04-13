@@ -10,6 +10,8 @@ function App() {
   
     <div id="mainContainer">
     <NavBar />
+    <div id="verticleLineLeft"></div>
+    <div id="verticleLineRight"></div>
     <Content />
     </div>
     
