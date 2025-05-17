@@ -1,33 +1,45 @@
 import './NavBar.css';
 import Search from '../searchBox/Search';
 import { NavLink } from 'react-router';
-
+import { Link } from 'react-router';
 
 function NavBar() {
 
-
-
     return (
         
-            <nav>
-                <NavLink to="/" className={({ isActive }) => (isActive ? "activeLogo" : "notActiveLogo")} >
-                    <h1 className='logo'>Reddit<span>light</span></h1>
-                </NavLink>
-                
-                <ul className='navigation-links'>
-                   <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "notActive")} >  
-                        <li> <img className='navicons' src='./src/assets/home.png'/> Home</li> 
-                   </NavLink>
+        <nav>
 
-                   <NavLink to="/popular" className={({ isActive }) => (isActive ? "active" : "notActive")} > 
-                        <li> <img className='navicons' src='./src/assets/popular.png'/> Popular</li>
-                   </NavLink>
-                </ul>
-                <Search />
-            </nav>
+            <div id='logo'>
+
+                <Link to="/">
+
+                    <span id='logoOrange'>Reddit</span><span id='logoBlack'>light</span>
+
+                </Link>
+                
+            </div>
+            
+            <ul className='navigation-links'>
+
+                <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "notActive")}>  
+
+                        <img className='navicons' src='./src/assets/H.png'/> Home
+
+                </NavLink>
+
+                <NavLink to="/popular" className={({ isActive }) => (isActive ? "active" : "notActive")}>
+
+                    <img className='navicons' src='./src/assets/popular.png'/> Popular
+
+                </NavLink>
+
+            </ul>
+
+            <Search />
+
+        </nav>
         
-        
-    )
+    );
 
 };
 

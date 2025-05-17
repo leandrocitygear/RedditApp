@@ -1,117 +1,103 @@
-.Homelink {
-    margin: 0;
-    padding: 1%;
-    /* margin-top: 5%; */
-    border: transparent gray 1px;
-    border-top: none;
-    /* border-right: none; */
-    height: 78%;
-    width: 945px;
-    display: flex;
-    align-items: center;
+#Homelink {
+    margin: 1rem auto;
+    padding: 0.3rem 1rem;
+    width: 90%;
+    max-width: 800px;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
     color: black;
-}
-
-
-.HomepostContainer {
-    /* border: solid transparent  1px; */
-    /* border-left: none; */
-    /* border-right: none; */
-    height: 99%;
-    width: 100%;
-    border-radius: 30px;
-    cursor: pointer;
-    /* background-color: rgb(235, 235, 235); */
-background-color: rgb(249, 249, 249);
-
-    /* margin: 1%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-}
-
-.HomepostContainer:hover {
-    background-color: rgb(245, 245, 245);
-    /* border: solid 1px #FF4500; */
-    color: black;
-}
-
+    box-sizing: border-box;
+    background-color: rgb(212, 211, 211);
+    border-radius: 1.5rem;
+  }
+  
 .HomeuserInfo {
-    /* border: solid 1px blue; */
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    align-items: center;
-    margin: 1%;
-    position: relative;
-    right: 290px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.3rem;
+  max-width: 160px;
 }
 
 #HomeuserImage {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-margin-right: 5px;
-margin: 2px;
-
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
 }
 
 #HomeuserName {
-margin-left: 1px;
-margin-right:  2px ;
+  font-size: 0.8rem;
+  color: black;
 }
 
 #HomeuserPost {
-    /* border: solid 1px green; */
-    height: 92%;
-    width: 95%;
-    margin-top: 1%;
-
-    
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0.5rem;
 }
 
 #HomepostHeading {
-    /* border: solid 1px; */
-    margin: 0;
-    font-size: 20px;
-    padding-left: 0.5%;
+  font-size: 1.25rem;
+  margin: 0;
+  word-wrap:break-word;
 }
 
 .HomepostContent {
-    /* height: 89%; */
-    width: 100%;
-    border-radius: 20px ;
-    margin: 0;
-    /* border: solid; */
-    
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: contain;
+  max-height: 400px;
+  display: block;
+  background-color: black;
 }
 
 .HomecommentsButtom {
-    border: solid transparent 1px;
-    height: 4%;
-    width: 10%;
-    border-radius: 16px;
-    background-color: rgb(236, 235, 235); 
-    margin-left: 2%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    cursor: pointer;
-    padding-left: 5px;
-    padding-right: 5px;
-    
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(236, 235, 235);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  max-width: 50px;
 }
 
 .HomecommentsButtom:hover {
-    border: solid #FF4500 1px;
-
+  border: 1px solid #FF4500;
 }
 
 .Homeicons {
-    height: 80%;
+  height: 1rem;
 }
 
-#commentAmount {
+a {
+  color: black;
+}
 
+a:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  #Homelink {
+    grid-template-rows: repeat(1, auto);
+    padding: 1rem;
+  }
+
+  #HomepostHeading {
+    font-size: 1rem;
+  }
+
+  .HomepostContent {
+    border-radius: 0.75rem;
+  }
+
+  .HomecommentsButtom {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+  }
 }

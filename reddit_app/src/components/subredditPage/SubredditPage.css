@@ -1,22 +1,18 @@
 #SubID {
-    /* border: solid 1px; */
     border-bottom: solid gray 1px;
     height: 100px;
     width: 963px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     padding: 10px;
-    z-index: 10;
-    position: fixed;
     background-color: white;
-    /* margin-bottom: 100px; */
 }
 
 #SubImage {
     height: 100px;
     width: 100px;
     border-radius: 20px;
+    border: solid 1px;
 }
 
 #SubredditName {
@@ -25,131 +21,107 @@
    margin-left: 10px;
 }
 
-#spaceholder {
-    margin: 0;
-    height: 140px;
-    width: 100px;
-    border: solid transparent ;
-}
-
-#box {
-    height: 140px;
-}
-
 .Subredditlink {
-    margin: 0;
-    padding: 1%;
-    /* margin-top: 5%; */
-    /* border: solid gray 1px; */
-    border-top: none;
-    /* border-right: none; */
-    height: 78%;
-    width: 945px;
-    display: flex;
-    align-items: center;
+    margin: 1rem auto;
+    padding: 0.3rem 1rem;
+    width: 90%;
+    max-width: 800px;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
     color: black;
-}
-
-
-.SubredditpostContainer {
-    /* border: solid transparent  1px; */
-    /* border-left: none; */
-    /* border-right: none; */
-    height: 99%;
-    width: 100%;
-    border-radius: 30px;
-    cursor: pointer;
-    /* background-color: rgb(235, 235, 235); */
-background-color: rgb(249, 249, 249);
-
-    /* margin: 1%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-}
-
-.SubredditpostContainer:hover {
-    background-color: rgb(245, 245, 245);
-    /* border: solid 1px #FF4500; */
-    color: black;
+    box-sizing: border-box;
+    background-color: rgb(212, 211, 211);
+    border-radius: 1.5rem;
 }
 
 .SubreddituserInfo {
-    /* border: solid 1px blue; */
-    display: flex;
-    width: fit-content;
-    height: fit-content;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    margin: 1%;
-    position: relative;
-    right: 290px;
+    gap: 0.3rem;
+    max-width: 160px;
 }
 
 #SubreddituserImage {
-    height: 30px;
-    width: 30px;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 50%;
-margin-right: 5px;
-margin: 2px;
-
 }
 
 #SubreddituserName {
-margin-left: 1px;
-margin-right:  2px ;
+    font-size: 0.8rem;
+    color: black;
 }
 
 #SubreddituserPost {
-    /* border: solid 1px green; */
-    height: 92%;
-    width: 95%;
-    margin-top: 1%;
-
-    
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 0.5rem;
 }
 
 #SubredditpostHeading {
-    /* border: solid 1px; */
+    font-size: 1.25rem;
     margin: 0;
-    font-size: 20px;
-    padding-left: 0.5%;
+    word-wrap:break-word;
 }
 
 .SubredditpostContent {
-    /* height: 89%; */
-    width: 100%;
-    border-radius: 20px ;
-    margin: 0;
-    /* border: solid; */
-    
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: contain;
+  max-height: 400px;
+  display: block;
+  background-color: black;
 }
 
 .SubredditcommentsButtom {
-    border: solid transparent 1px;
-    height: 4%;
-    width: 10%;
-    border-radius: 16px;
-    background-color: rgb(236, 235, 235); 
-    margin-left: 2%;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(236, 235, 235);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
     cursor: pointer;
-    padding-left: 5px;
-    padding-right: 5px;
-    
+    border: 1px solid transparent;
+    max-width: 50px;
 }
 
 .SubredditcommentsButtom:hover {
     border: solid #FF4500 1px;
-
 }
 
 .Subredditicons {
-    height: 80%;
+    height: 1rem;
 }
 
-#commentAmount {
+a {
+    color: black;
+  }
 
-}
+a:hover {
+    color: black;
+  }
+
+
+  @media (max-width: 768px) {
+    #Subredditlink {
+      grid-template-rows: repeat(1, auto);
+      padding: 1rem;
+    }
+  
+    #SubredditpostHeading {
+      font-size: 1rem;
+    }
+  
+    .SubredditpostContent {
+      border-radius: 0.75rem;
+    }
+  
+    .SubredditcommentsButtom {
+      font-size: 0.75rem;
+      padding: 0.4rem 0.75rem;
+    }
+  }
