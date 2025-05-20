@@ -1,11 +1,7 @@
-export default defineConfig({
+const { defineConfig } = require('vite');
+const react = require('@vitejs/plugin-react');
+
+module.exports = defineConfig({
   plugins: [react()],
-  server: {
-    watch: {
-      usePolling: true
-    }
-  },
-  build: {
-    outDir: 'dist'
-  }
-})
+});
+  
