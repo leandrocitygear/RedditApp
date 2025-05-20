@@ -49,7 +49,7 @@ function CommentsPage() {
                             post.url.match(/\.(jpeg|jpg|gif|png)$/i) && (
                                 <img className='commentPostContent' src={post.url}/>
                             )
-                            )};
+                            )}
 
                         </div> 
                         
@@ -96,7 +96,7 @@ function CommentsPage() {
                         
                         </div>
 
-                    ))};
+                    ))}
 
                 </div>
 

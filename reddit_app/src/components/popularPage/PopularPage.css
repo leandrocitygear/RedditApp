@@ -12,6 +12,10 @@
     border-radius: 1.5rem;
 }
 
+#popularPostContainer:hover {
+  background-color: rgb(199, 207, 214);
+}
+
 .popularUserInfo {
     display: grid;
     grid-template-columns: auto auto 1fr;

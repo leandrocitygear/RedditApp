@@ -10,7 +10,11 @@
     box-sizing: border-box;
     background-color: rgb(212, 211, 211);
     border-radius: 1.5rem;
-  }
+}
+
+#postContainer:hover {
+  background-color: rgb(199, 207, 214);
+}
   
 .userInfo {
   display: grid;

@@ -1,4 +1,4 @@
-.searchbox {
+#searchbox {
     width: 15%;
     margin: 0;
     padding: 0;
@@ -24,4 +24,11 @@ input:hover:focus{
 input:focus {
     border: solid #FF4500 1px;
     outline: none;
+}
+
+@media (max-width: 768px) {
+#searchbox {
+    width: 20%;
+}
+
 }

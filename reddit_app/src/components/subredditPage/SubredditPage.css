@@ -36,6 +36,10 @@
   border-radius: 1.5rem;
 }
 
+#subredditPostContainer:hover {
+  background-color: rgb(199, 207, 214);
+}
+
 #subredditUserInfo {
   display: grid;
   grid-template-columns: auto auto 1fr;
@@ -83,7 +87,7 @@
   max-width: 60px;
 }
 
-.subredditCommentsButtom:hover {
+#subredditCommentsButtom:hover {
   border: solid #FF4500 1px;
 }
 
