@@ -7,7 +7,6 @@ function NavBar() {
 
     return (
         
-        // Navavigation bar Component
         <nav>
 
             <div id='logo'>
@@ -30,7 +29,7 @@ function NavBar() {
 
                 <NavLink to="/popular" className={({ isActive }) => (isActive ? "active" : "notActive")}>
 
-                    <img className='navIcons' src='/popular.png'/> Popular
+                    <img className='navIcons' src='/trending_up_24dp.png'/> Popular
 
                 </NavLink>
 
