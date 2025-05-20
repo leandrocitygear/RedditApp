@@ -37,6 +37,7 @@ export const fetchHomePost = () => async (dispatch) => {
         const homePost = await getHomePost();
         dispatch(homePostFulfilled(homePost));
     } catch (error) {
+        console.error('Error in fetchHomePost:', error);
         dispatch(homePostRejected())
     }
 };
