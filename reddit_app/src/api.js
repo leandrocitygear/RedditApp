@@ -8,7 +8,7 @@ export const getHomePost = async () => {
 };
 
 export const getPopularPost = async () => {
-    const response = await fetch(`${API_ROOT}/r/popular/.json?sr_detail=1`);
+    const response = await fetch(`${API_ROOT}/r/popular/best/.json?sr_detail=1`);
     const json = await response.json();
     
     return json.data.children.map((post) => post.data);
