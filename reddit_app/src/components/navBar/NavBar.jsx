@@ -7,6 +7,7 @@ function NavBar() {
 
     return (
         
+        // Navavigation bar Component
         <nav>
 
             <div id='logo'>
@@ -23,13 +24,13 @@ function NavBar() {
 
                 <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "notActive")}>  
 
-                        <img className='navicons' src='./src/assets/H.png'/> Home
+                        <img className='navIcons' src='/H.png'/> Home
 
                 </NavLink>
 
                 <NavLink to="/popular" className={({ isActive }) => (isActive ? "active" : "notActive")}>
 
-                    <img className='navicons' src='./src/assets/popular.png'/> Popular
+                    <img className='navIcons' src='/popular.png'/> Popular
 
                 </NavLink>
 

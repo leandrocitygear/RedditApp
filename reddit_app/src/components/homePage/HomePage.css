@@ -1,4 +1,4 @@
-#Homelink {
+#postContainer {
     margin: 1rem auto;
     padding: 0.3rem 1rem;
     width: 90%;
@@ -12,38 +12,44 @@
     border-radius: 1.5rem;
   }
   
-.HomeuserInfo {
+.userInfo {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto 1fr;
   align-items: center;
   gap: 0.3rem;
   max-width: 160px;
 }
 
-#HomeuserImage {
+.date {
+  font-size: 0.8rem;
+  color: black;
+  margin: 0;
+}
+
+#userImage {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
 }
 
-#HomeuserName {
+#userName {
   font-size: 0.8rem;
   color: black;
 }
 
-#HomeuserPost {
+#userPost {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 0.5rem;
 }
 
-#HomepostHeading {
+#postHeading {
   font-size: 1.25rem;
   margin: 0;
   word-wrap:break-word;
 }
 
-.HomepostContent {
+.postContent {
   width: 100%;
   border-radius: 1rem;
   object-fit: contain;
@@ -52,26 +58,26 @@
   background-color: black;
 }
 
-.HomecommentsButtom {
-  display: grid;
-  grid-auto-flow: column;
+.commentsButtom {
+  display: flex;
+  gap: 0.3rem;
   align-items: center;
-  justify-content: space-evenly;
   background-color: rgb(236, 235, 235);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-size: 0.875rem;
   cursor: pointer;
   border: 1px solid transparent;
-  max-width: 50px;
+  max-width: 60px;
 }
 
-.HomecommentsButtom:hover {
+.commentsButtom:hover {
   border: 1px solid #FF4500;
 }
 
-.Homeicons {
-  height: 1rem;
+.commentIcon {
+  height: 17px;
+  width: 17px;
 }
 
 a {
@@ -83,20 +89,20 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  #Homelink {
+  #postContainer {
     grid-template-rows: repeat(1, auto);
     padding: 1rem;
   }
 
-  #HomepostHeading {
+  #postHeading {
     font-size: 1rem;
   }
 
-  .HomepostContent {
+  .postContent {
     border-radius: 0.75rem;
   }
 
-  .HomecommentsButtom {
+  .commentsButtom {
     font-size: 0.75rem;
     padding: 0.4rem 0.75rem;
   }

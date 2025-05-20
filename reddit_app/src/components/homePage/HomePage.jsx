@@ -14,56 +14,52 @@ function HomePage() {
     }, [dispatch]);
 
     if (isLoading) return <p>Loading...</p>;
-    if (error) return <p>Error Somewhere</p>
-    // console.log(homePost)
-
+    if (error) return <p>Error Somewhere</p>;
 
     return (
 
         <>
             
             {homePost.map((post) => (
-                <div key={post.id} id='Homelink'>
 
-                    <Link to={`/r/${post.subreddit}`}>
-                    
-                    <div className='HomeuserInfo'>
-                            <img id='HomeuserImage' src={post.sr_detail?.icon_img || './src/assets/reddit-icon.png'}/>
-                            <span id='HomeuserName'>{post.subreddit_name_prefixed}</span>
-                    </div>
+                <div key={post.id} id='postContainer'>
+
+                    <Link className='userInfo' to={`/r/${post.subreddit}`}>
+
+                            <img id='userImage' src={post.sr_detail?.icon_img || '/reddit-icon.png'}/>
+                            <span id='userName'>{post.subreddit_name_prefixed}</span>
+                            <p className='date' >{new Date(post.created_utc * 1000).toLocaleDateString()}</p>
+
                     </Link>
 
-                    <Link to={post.permalink}>
-                    <div id='HomeuserPost'>
+                    <Link id='userPost' to={post.permalink}>
 
-                        <p id='HomepostHeading'>{post.title}</p>
-
+                        <p id='postHeading'>{post.title}</p>
 
                         {post.is_video && post.media?.reddit_video?.fallback_url ? (
-                        <video className="HomepostContent" controls>
+                        <video className="postContent" controls>
                             <source src={post.media.reddit_video.fallback_url} type="video/mp4"/>
                             Your browser does not support the video tag.
                         </video>
                         ) : (
                             post.url.match(/\.(jpeg|jpg|gif|png)$/i) && (
-                                <img className='HomepostContent' src={post.url}/>
+                                <img className='postContent' src={post.url}/>
                             )
                         )}
 
-                    </div>
                     </Link>
                     
-                        <Link to={post.permalink}>
-                        <div className='HomecommentsButtom'>
+                    <Link className='commentsButtom' to={post.permalink}>
 
-                            <img className="Homeicons" src="./src/assets/comment.png" alt=""/>
-                            <span id="HomecommentAmount">{post.num_comments}</span>
+                            <img className="commentIcon" src="/chat_23dp.png" alt="comments"/>
+                            <span id="commentAmount">{post.num_comments}</span>
 
-                        </div>
-                        </Link>
+                    </Link>
 
                 </div>
+
             ))};
+
         </>
 
     )

@@ -16,53 +16,56 @@ function PopularPage() {
 
     if (isLoading) return <p>Loading...</p>;
     if (error) return <p>Error In PopularPage</p>;
-    console.log(popularPost);
-
-
-
 
     return (
 
-
         <>
-        {popularPost.map((post) => ( 
-        <div key={post.id} id='Popularlink'>
-            <Link className='PopularuserInfo' to={`/r/${post.subreddit}`}>
-                <img id='PopularuserImage' src={post.sr_detail?.icon_img || './src/assets/reddit-icon.png'} />
-                <span id='PopularuserName'>{post.subreddit_name_prefixed}</span>
-            </Link>
 
-            <Link to={post.permalink}>
-            <div id='PopularuserPost'>
-            <p id='PopularpostHeading'>{post.title}</p>
+            {popularPost.map((post) => ( 
 
-            {post.is_video && post.media?.reddit_video?.fallback_url ? ( 
-            <video className="PopularpostContent" controls>
-                <source src={post.media.reddit_video.fallback_url} type='video/mp4'/>
-            </video>
+                <div key={post.id} id='popularPostContainer'>
 
-            ) : (
+                    <Link className='popularUserInfo' to={`/r/${post.subreddit}`}>
 
-                post.url.match(/\.(jpeg|jpg|gif|png)$/i) && (
-                    <img className='PopularpostContent' src={post.url}/>
-                )
-            )}
-           
-            </div>
-            </Link>
+                        <img id='popularUserImage' src={post.sr_detail?.icon_img || '/reddit-icon.png'} />
+                        <span id='popularUserName'>{post.subreddit_name_prefixed}</span>
+                        <p className='date' >{new Date(post.created_utc * 1000).toLocaleDateString()}</p>
+
+                    </Link>
+
+                    <Link id='popularUserPost' to={post.permalink}>
+
+                        <p id='popularPostHeading'>{post.title}</p>
+
+                        {post.is_video && post.media?.reddit_video?.fallback_url ? ( 
+                        <video className="popularPostContent" controls>
+                            <source src={post.media.reddit_video.fallback_url} type='video/mp4'/>
+                        </video>
+                        ) : (
+
+                            post.url.match(/\.(jpeg|jpg|gif|png)$/i) && (
+                                <img className='popularPostContent' src={post.url}/>
+                            )
+                        )}
+
+                    </Link>
 
 
-            <Link to={post.permalink}>
-            <div className='PopularcommentsButtom'>
-                <img className="Popularicons" src="./src/assets/comment.png" alt="" />
-                <span id="PopularcommentAmount">{post.num_comments}</span>
-            </div>
-            </Link>
+                    <Link className='popularCommentsButtom' to={post.permalink}>
 
-        </div>
-        ))}
+                        <img className="popularCommentIcon" src="/chat_23dp.png" alt="comments" />
+                        <span id="popularCommentAmount">{post.num_comments}</span>
+
+                    </Link>
+
+                </div>
+
+            ))};
+
         </>
+
     )
+
 };
 
 export default PopularPage;

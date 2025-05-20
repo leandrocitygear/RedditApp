@@ -1,114 +1,129 @@
 #CategoriesBox {
-    width: 25rem;
-    height: 3.125rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: white;   
+  width: 25rem;
+  height: 3.125rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;   
 }
 
 #PostBtn {
-    background-color: rgb(235, 235, 235);
-    width: 9.375rem;
-    height: 1.875rem;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
+  background-color: rgb(235, 235, 235);
+  width: 9.375rem;
+  height: 1.875rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
 }
 
 #PostBtn:hover {
-    border: solid 0.063rem #FF4500;
+  border: solid 0.063rem #FF4500;
 }
 
 .activeFilter:visited{
-    border: solid 1px #FF4500;
+  border: solid 1px #FF4500;
 }
 
 .notActiveFilter {
-    border: solid 1px blue;
+  border: solid 1px blue;
 }
 
 #SubredditsBtn {
-    background-color: rgb(235, 235, 235);
-    width: 9.375rem;
-    height: 1.875rem;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
+  background-color: rgb(235, 235, 235);
+  width: 9.375rem;
+  height: 1.875rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
 }
 
 #SubredditsBtn:hover {
-    border: solid 0.063rem #FF4500;
+  border: solid 0.063rem #FF4500;
 }
 
 #Results {
-    width: 90%;
-    max-width: 850px;
-    height: auto;
-    margin: 1rem auto;
-  }
-  
+  width: 90%;
+  max-width: 850px;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.ResultspostContainer {
+  width: 100%;
+  height: 150px;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  background-color: rgb(212, 211, 211);
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.ResultsuserInfo {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+#date {
+  margin: 0;
+  font-size: 0.8rem;
+  color: black;
+}
+
+#ResultsuserImage {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+#ResultsuserName {
+  font-size: 0.8rem;
+}
+
+#ResultsuserPost {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 150px ;
+}
+
+#ResultspostHeading {
+  font-size: 1.125rem;
+  margin: 0;
+  color: black;
+  margin-left: 1rem;
+}
+
+.ResultspostContent {
+  width: 100%;
+  max-height: 90px ;
+  border-radius: 0.625rem;
+  margin: 0 auto;
+  object-fit: contain;
+  background-color: black;
+}
+
+.Resultscomments {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.875rem;
+  max-width: fit-content;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
   .ResultspostContainer {
-    width: 100%;
-    height: 150px;
-    border-radius: 1.875rem;
-    cursor: pointer;
-    background-color: rgb(212, 211, 211);
-    color: black;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
+    height: fit-content;
   }
-  
-  .ResultsuserInfo {
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-  }
-  
-  #ResultsuserImage {
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-  }
-  
-  #ResultsuserName {
-    font-size: 0.8rem;
-  }
-  
-  #ResultsuserPost {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 150px ;
-  }
-  
-  #ResultspostHeading {
-    font-size: 1.125rem;
-    margin: 0;
-    color: black;
-  }
-  
-  .ResultspostContent {
-    width: 100%;
-    height: auto;
-    border-radius: 0.625rem;
-    margin: 0 auto;
-  }
-  
-  .ResultscommentsButtom {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    margin-left: 1rem;
-    font-size: 0.875rem;
-    cursor: pointer;
-    max-width: 95px;
-  }
+}
