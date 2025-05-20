@@ -17,16 +17,17 @@
 }
 
 .popularUserInfo {
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    align-items: center;
-    gap: 0.3rem;
-    max-width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: fit-content;
+  height: fit-content;
 }
 
 .date {
   font-size: 0.8rem;
   color: black;
+  margin: 0;
 }
 
 #popularUserImage {

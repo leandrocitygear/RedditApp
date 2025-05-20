@@ -13,11 +13,17 @@
 }
 
 #commentUserInfo {
-    display: grid;
-    grid-template-columns: auto auto 1fr;
+    display: flex;
     align-items: center;
     gap: 0.3rem;
-    max-width: 160px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: black;
+    margin: 0;
 }
 
 #commentUserImage {
