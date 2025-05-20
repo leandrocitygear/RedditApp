@@ -1,10 +1,8 @@
 const API_ROOT = 'https://www.reddit.com';
 
 export const getHomePost = async () => {
-    const response = await fetch('/.netlify/functions/getHomePost');
+    const response = await fetch(`${API_ROOT}/.json?sr_detail=1`);
     const json = await response.json();
-
-    console.log('API Response:', json);
 
     return json.data.children.map((post) => post.data);
 };
