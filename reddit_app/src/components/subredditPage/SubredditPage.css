@@ -17,7 +17,7 @@
 }
 
 #subredditName {
-  font-size: 30px;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
   font-weight: 600;
   margin-left: 10px;
 }
